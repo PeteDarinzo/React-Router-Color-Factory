@@ -13,7 +13,7 @@ const Color = ({ colors }) => {
           color: "white", 
           backgroundColor: `${colorData.color}`,
           height: "200px" }}>
-          <h1>This is {color}, it's hex code is {colorData.color}</h1>
+          <h1>This is {color}, its hex code is {colorData.color}</h1>
         </div>
         <Link className="Color-return" to="/colors">Return</Link>
       </div>) :

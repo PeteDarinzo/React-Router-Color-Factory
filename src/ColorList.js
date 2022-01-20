@@ -7,7 +7,7 @@ const ColorList = ({ colors, removeColor }) => {
 
   return (
     <div className="ColorList">
-      <h1>Color List</h1>
+      <h1>Color Factory</h1>
       <i className="fas fa-palette fa-4x"></i>
       <Link className="ColorList-new" to="/colors/new">Add new color</Link>
       <i className="fas fa-cogs fa-4x"></i>

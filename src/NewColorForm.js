@@ -24,6 +24,7 @@ const ColorForm = ({ addColor }) => {
 
   return (
     <div>
+      <h1>New Color</h1>
       <form onSubmit={handleSubmit} className="NewColorForm">
         <div>
           <label htmlFor="name">
@@ -54,7 +55,7 @@ const ColorForm = ({ addColor }) => {
         </div>
       </form>
     </div>
-  )
+  );
 }
 
 export default ColorForm;
