@@ -4,7 +4,7 @@ import './Color.css';
 
 const Color = ({ colors }) => {
   const { color } = useParams();
-  const colorData = colors.find(c => c.name === color);
+  const colorData = colors.find(c => c.sluggified === color);
 
   return (
     colorData ?
@@ -13,7 +13,7 @@ const Color = ({ colors }) => {
           color: "white", 
           backgroundColor: `${colorData.color}`,
           height: "200px" }}>
-          <h1>This is {color}, its hex code is {colorData.color}</h1>
+          <h1>This is "{colorData.name}", its hex code is {colorData.color}</h1>
         </div>
         <Link className="Color-return" to="/colors">Return</Link>
       </div>) :

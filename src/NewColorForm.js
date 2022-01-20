@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import slugify from "slugify";
 import './NewColorForm.css';
 
 const ColorForm = ({ addColor }) => {
 
   const history = useHistory();
 
-  const initialState = { name: "", color: "#000000" };
+  const initialState = { name: "", sluggified: "", color: "#000000" };
 
   const [formData, setFormData] = useState(initialState)
 
@@ -17,8 +18,8 @@ const ColorForm = ({ addColor }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addColor({ ...formData })
-    setFormData({ name: "", color: "#000000" });
+    addColor({ ...formData, sluggified: slugify(formData.name) })
+    setFormData({ name: "", sluggified: "", color: "#000000" });
     history.push('/colors');
   }
 
