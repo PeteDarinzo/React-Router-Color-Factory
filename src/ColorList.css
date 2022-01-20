@@ -1,0 +1,46 @@
+
+
+.ColorList {
+  margin: 0 auto;
+}
+
+.ColorList h1 {
+  font-size: 3rem;
+}
+
+.ColorList h2 {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.ColorList-link {
+  font-size: 1.5rem;
+  margin: 15px;
+  background-color: whitesmoke;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.ColorList-new {
+  font-size: 2rem;
+  margin: 30px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.ColorList-remove {
+  height: 25px;
+  width: 25px;
+  border: solid 2px red;
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+}
+
+.ColorList-remove:hover {
+  background-color: red;
+  color: white;
+  transition: 250ms;
+}

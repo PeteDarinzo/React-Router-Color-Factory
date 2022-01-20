@@ -1,0 +1,12 @@
+
+.Color h1 {
+  position: relative;
+  top: 35%;
+}
+
+.Color-return {
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  padding: 8px;
+  border-radius: 10px;
+}
